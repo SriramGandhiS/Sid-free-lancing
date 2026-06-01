@@ -48,7 +48,7 @@ function App() {
       <section className="section hero">
         <div className="hero-top-text">
           <span>Graphic Designer Portfolio</span>
-          <span>Sid</span>
+          <span>Siddhu R.S</span>
         </div>
         <div className="hero-title-container">
           <h1 className="hero-title">PORTFOLIO</h1>
@@ -71,12 +71,12 @@ function App() {
           <div className="about-text-area">
             <div className="section-header about-header">
               <h1 className="section-title">HELLO I'AM</h1>
-              <h2 className="section-subtitle">Sid</h2>
+              <h2 className="section-subtitle">Siddhu</h2>
             </div>
             <p className="about-desc">
-              My name is Sid. This presentation is a collection of some of my most significant works and projects that reflect my skills, creativity, and professional growth.
+              Creative and detail-oriented Graphic Designer with hands-on freelance experience and a strong academic foundation in Electrical and Electronics Engineering. Proficient in Adobe tools, branding, and Design principles.
               <br/><br/>
-              Throughout this portfolio, Turning ideas into visuals that speak clean, bold, and designed to leave a lasting impression.
+              Passionate about visual storytelling, user-centered design, and exploring new creative challenges. Seeking to apply my skills in a professional and collaborative environment.
             </p>
             <div className="floating-icon icon-pen-bottom">🖋️</div>
             <div className="squiggle squiggle-3"></div>
@@ -92,7 +92,7 @@ function App() {
       <section className="section skills">
         <div className="section-header center">
           <h1 className="section-title">SKILLS & TOOLS</h1>
-          <h2 className="section-subtitle">Sid</h2>
+          <h2 className="section-subtitle">Siddhu</h2>
           <div className="squiggle squiggle-5"></div>
         </div>
         <div className="skills-paper-container">
@@ -100,9 +100,9 @@ function App() {
             <div className="skills-col">
               <h3>Designing Skills</h3>
               <ul>
-                <li>Branding</li>
-                <li>Social Media Posts</li>
-                <li>Print Media Designs</li>
+                <li>Branding & Identity</li>
+                <li>Social Media Design</li>
+                <li>Typography & Color Theory</li>
                 <li>Video Editing</li>
               </ul>
             </div>
@@ -111,7 +111,7 @@ function App() {
               <div className="software-icons">
                 <span className="soft-icon ps">Ps</span>
                 <span className="soft-icon ai">Ai</span>
-                <span className="soft-icon pr">Pr</span>
+                <span className="soft-icon fg">Fg</span>
               </div>
             </div>
           </div>
@@ -181,9 +181,9 @@ function App() {
         </div>
         <div className="footer-bottom-tear">
           <div className="contact-links">
-            <span>📞 +919000000000</span>
-            <span>📷 @sid_art</span>
-            <span>✉️ sid@example.com</span>
+            <span>📞 +91 9361338723</span>
+            <span>🌐 behance.net/rssiddhu</span>
+            <span>✉️ rssiddhuram@gmail.com</span>
           </div>
         </div>
       </footer>

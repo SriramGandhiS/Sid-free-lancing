@@ -270,7 +270,7 @@ body {
 }
 .soft-icon.ps { background-color: #001e36; color: #31a8ff; border: 2px solid #31a8ff; }
 .soft-icon.ai { background-color: #330000; color: #ff9a00; border: 2px solid #ff9a00; }
-.soft-icon.pr { background-color: #1a0033; color: #d664ff; border: 2px solid #d664ff; }
+.soft-icon.fg { background-color: #33001a; color: #f24e1e; border: 2px solid #f24e1e; }
 .squiggle-5 { right: 25%; top: 50%; transform: rotate(15deg); }
 
 /* 4. Portfolio Grids */
