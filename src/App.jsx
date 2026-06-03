@@ -125,7 +125,7 @@ function App() {
             <div className="squiggle squiggle-3"></div>
           </div>
           <div className="about-image-area">
-            <div className="image-placeholder with-outline"></div>
+            <img src="/images/me.png" className="image-placeholder with-outline profile-img" alt="Siddhu" />
             <div className="squiggle squiggle-4"></div>
           </div>
         </div>

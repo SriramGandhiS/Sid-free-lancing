@@ -202,14 +202,16 @@ body {
   justify-content: center;
   position: relative;
 }
-.image-placeholder.with-outline {
+.profile-img {
   width: 400px;
-  height: 500px;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
   background-color: #222;
   border-radius: 10px;
   position: relative;
 }
-.image-placeholder.with-outline::before {
+.profile-img::before {
   content: '';
   position: absolute;
   top: -15px; left: -15px; right: -15px; bottom: -15px;
