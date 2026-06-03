@@ -458,7 +458,7 @@ body {
 @media (max-width: 768px) {
   .portfolio-container { overflow-x: hidden; width: 100vw; max-width: 100%; }
   .section { padding: var(--space-48) var(--space-16); min-height: auto; }
-  .hero { min-height: 80vh; padding-top: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  .hero { min-height: 45vh; padding-top: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
   .skills-grid { flex-direction: column; gap: var(--space-32); }
   .contact-links { flex-direction: column; align-items: center; gap: var(--space-16); }
   .hero-title { font-size: 3rem; }
