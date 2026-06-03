@@ -42,6 +42,49 @@ function App() {
     })
   }, { scope: containerRef })
 
+  const socialMediaImages = [
+    '/images/Social Media Design/Artboard 1.png',
+    '/images/Social Media Design/Vizhi Veekura2.png',
+    '/images/Social Media Design/ajith colr grade.png',
+    '/images/Social Media Design/barc vs rm 2.jpg',
+    '/images/Social Media Design/charles.png',
+    '/images/Social Media Design/firangpani.png',
+    '/images/Social Media Design/lamine yamal.jpg',
+    '/images/Social Media Design/messi india 3.jpg',
+    '/images/Social Media Design/paal dabba final.jpg'
+  ];
+
+  const printMediaImages = [
+    '/images/Blogs/Syngrid/syngrid-infographic-poster.jpg',
+    '/images/Blogs/Syngrid/syngrid blog 4.3 copy.webp',
+    '/images/Blogs/Syngrid/syngrid blog 6.3 copy.webp',
+    '/images/Blogs/Syngrid/syngrid blog copy (1).webp',
+    '/images/Blogs/Syngrid/syngrid vlog 30.3 copy.webp',
+    '/images/Social Media Design/sai albumpost.jpg',
+    '/images/Social Media Design/sprite.jpg'
+  ];
+
+  const illustrationsImages = [
+    '/images/Social Media Design/paperboat final.png',
+    '/images/Social Media Design/tuf.jpg',
+    '/images/Blogs/Mak Logistics/mak blog 11.5 copy.webp',
+    '/images/Blogs/Mak Logistics/mak blog 14.5 copy2.webp',
+    '/images/Blogs/Mak Logistics/mak blog 18.2 blog 2 copy.webp',
+    '/images/Blogs/Mak Logistics/mak-blog-18 (2).jpg',
+    '/images/Blogs/Mak Logistics/mak blog 2.3 2 copy.webp'
+  ];
+
+  const brandingImages = [
+    '/images/Brand Design/Natoma Cleaning Company/687838093_17975878011042322_1590309337650273754_n.jpg',
+    '/images/Brand Design/Natoma Cleaning Company/690993784_17976167178042322_1504832319170355888_n.jpg',
+    '/images/Brand Design/Natoma Cleaning Company/natoma-blog-6.jpg',
+    '/images/Brand Design/Natoma Cleaning Company/natoma-poster-16 (3).jpg',
+    '/images/Brand Design/Natoma Cleaning Company/natoma-poster-17.jpg',
+    '/images/Brand Design/Natoma Cleaning Company/natoma-poster-293.jpg',
+    '/images/Brand Design/syngrid poster5.jpg',
+    '/images/Brand Design/syngrid-poster2 (1).png'
+  ];
+
   return (
     <div className="portfolio-container" ref={containerRef}>
       {/* Hero Section */}
@@ -125,8 +168,10 @@ function App() {
           <h2 className="section-subtitle">Designs</h2>
         </div>
         <div className="grid-container masonry-ish">
-          {[1,2,3,4,5,6,7,8,9].map(i => (
-            <div key={i} className={`grid-item item-${i}`}></div>
+          {socialMediaImages.map((src, idx) => (
+            <div key={idx} className={`grid-item item-${idx + 1}`}>
+              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Social Media Design" />
+            </div>
           ))}
         </div>
       </section>
@@ -138,8 +183,10 @@ function App() {
           <h2 className="section-subtitle">Designs</h2>
         </div>
         <div className="grid-container structured-grid">
-          {[1,2,3,4,5,6,7].map(i => (
-            <div key={i} className={`grid-item print-item-${i}`}></div>
+          {printMediaImages.map((src, idx) => (
+            <div key={idx} className={`grid-item print-item-${idx + 1}`}>
+              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Print Media Design" />
+            </div>
           ))}
         </div>
       </section>
@@ -151,8 +198,10 @@ function App() {
           <h2 className="section-subtitle">Designs</h2>
         </div>
         <div className="grid-container illustration-grid">
-          {[1,2,3,4,5,6,7].map(i => (
-            <div key={i} className={`grid-item ill-item-${i}`}></div>
+          {illustrationsImages.map((src, idx) => (
+            <div key={idx} className={`grid-item ill-item-${idx + 1}`}>
+              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Illustration" />
+            </div>
           ))}
         </div>
       </section>
@@ -164,8 +213,10 @@ function App() {
           <h2 className="section-subtitle">Designs</h2>
         </div>
         <div className="grid-container branding-grid">
-          {[1,2,3,4,5,6,7,8].map(i => (
-            <div key={i} className={`grid-item brand-item-${i}`}></div>
+          {brandingImages.map((src, idx) => (
+            <div key={idx} className={`grid-item brand-item-${idx + 1}`}>
+              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Branding Design" />
+            </div>
           ))}
         </div>
       </section>
