@@ -275,52 +275,28 @@ body {
 
 /* 4. Portfolio Grids */
 .grid-container {
-  display: grid;
-  gap: var(--space-16);
+  display: block;
+  column-count: 4;
+  column-gap: var(--space-16);
   width: 100%;
 }
 .grid-item {
-  background-color: #222;
+  break-inside: avoid;
+  margin-bottom: var(--space-16);
   border-radius: 8px;
-  min-height: 200px;
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
+  background-color: #222;
 }
 .grid-item:hover {
   transform: translateY(-5px);
 }
-
-/* Social Media Masonry Layout */
-.masonry-ish {
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 200px;
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.item-1 { grid-column: span 1; grid-row: span 2; }
-.item-2 { grid-column: span 2; grid-row: span 2; }
-.item-3 { grid-column: span 1; grid-row: span 1; }
-.item-4 { grid-column: span 1; grid-row: span 1; }
-
-/* Print Media Layout */
-.structured-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-.print-item-1 { grid-column: span 2; grid-row: span 2; min-height: 400px; }
-
-/* Illustrations Layout */
-.illustration-grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
-}
-.ill-item-1 { grid-column: span 1; grid-row: span 2; }
-.ill-item-2 { grid-column: span 1; grid-row: span 1; }
-.ill-item-3 { grid-column: span 1; grid-row: span 2; }
-
-/* Branding Layout */
-.branding-grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-.brand-item-1 { grid-column: span 2; grid-row: span 2; min-height: 400px;}
 
 /* 5. Footer */
 .footer {
@@ -381,15 +357,15 @@ body {
   .hero-title { font-size: var(--size-5xl); }
   .hero-subtitle { font-size: var(--size-4xl); }
   .about-content { flex-direction: column; }
-  .masonry-ish, .structured-grid, .illustration-grid, .branding-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .grid-container {
+    column-count: 2;
   }
 }
 @media (max-width: 768px) {
   .section { padding: var(--space-48) var(--space-24); }
   .skills-grid { flex-direction: column; gap: var(--space-32); }
   .contact-links { flex-direction: column; align-items: center; gap: var(--space-16); }
-  .masonry-ish, .structured-grid, .illustration-grid, .branding-grid {
-    grid-template-columns: 1fr;
+  .grid-container {
+    column-count: 1;
   }
 }

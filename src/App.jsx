@@ -169,8 +169,8 @@ function App() {
         </div>
         <div className="grid-container masonry-ish">
           {socialMediaImages.map((src, idx) => (
-            <div key={idx} className={`grid-item item-${idx + 1}`}>
-              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Social Media Design" />
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Social Media Design" />
             </div>
           ))}
         </div>
@@ -184,8 +184,8 @@ function App() {
         </div>
         <div className="grid-container structured-grid">
           {printMediaImages.map((src, idx) => (
-            <div key={idx} className={`grid-item print-item-${idx + 1}`}>
-              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Print Media Design" />
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Print Media Design" />
             </div>
           ))}
         </div>
@@ -199,8 +199,8 @@ function App() {
         </div>
         <div className="grid-container illustration-grid">
           {illustrationsImages.map((src, idx) => (
-            <div key={idx} className={`grid-item ill-item-${idx + 1}`}>
-              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Illustration" />
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Illustration" />
             </div>
           ))}
         </div>
@@ -214,8 +214,8 @@ function App() {
         </div>
         <div className="grid-container branding-grid">
           {brandingImages.map((src, idx) => (
-            <div key={idx} className={`grid-item brand-item-${idx + 1}`}>
-              <img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="Branding Design" />
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Branding Design" />
             </div>
           ))}
         </div>
