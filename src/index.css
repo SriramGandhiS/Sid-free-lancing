@@ -364,10 +364,19 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .section { padding: var(--space-48) var(--space-24); }
+  .portfolio-container { overflow-x: hidden; width: 100vw; max-width: 100%; }
+  .section { padding: var(--space-48) var(--space-16); }
   .skills-grid { flex-direction: column; gap: var(--space-32); }
   .contact-links { flex-direction: column; align-items: center; gap: var(--space-16); }
   .grid-container {
     column-count: 1;
   }
+  .hero-title { font-size: 4rem; }
+  .hero-subtitle { font-size: 2.5rem; }
+  .section-title { font-size: 3.5rem; }
+  .section-subtitle { font-size: 2rem; }
+  .profile-img { width: 100%; max-width: 400px; height: auto; }
+  .about-text-area { padding-right: 0; }
+  .skills-paper-container { padding: var(--space-24); }
+  .floating-icon, .squiggle { display: none; }
 }
