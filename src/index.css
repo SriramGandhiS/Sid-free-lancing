@@ -70,6 +70,31 @@ body {
   justify-content: center;
 }
 
+.section-slide-header {
+  position: absolute;
+  top: 40px;
+  left: 64px;
+  right: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  pointer-events: none;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+.slide-header-left {
+  color: var(--accent);
+  font-weight: 700;
+}
+.slide-header-right {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 /* Common Header Styles */
 .section-header {
   position: relative;
@@ -945,5 +970,13 @@ body {
   .navbar-links a {
     font-size: 11px;
     letter-spacing: 0.08em;
+  }
+  .section-slide-header {
+    left: 16px;
+    right: 16px;
+    top: 60px;
+  }
+  .hero .section-slide-header {
+    display: none;
   }
 }

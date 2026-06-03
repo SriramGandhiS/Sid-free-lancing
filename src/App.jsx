@@ -140,6 +140,10 @@ function App() {
 
       {/* Hero Section */}
       <section className="section hero">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="hero-title-container">
           <h1 className="hero-title">PORTFOLIO</h1>
           <h2 className="hero-subtitle">Graphic Design</h2>
@@ -156,7 +160,11 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="section about">
+      <section className="section about" id="about">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="about-content">
           <div className="about-text-area">
             <div className="section-header about-header">
@@ -179,7 +187,11 @@ function App() {
       </section>
 
       {/* Skills & Tools */}
-      <section className="section skills">
+      <section className="section skills" id="skills">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="section-header center">
           <h1 className="section-title">SKILLS & TOOLS</h1>
           <h2 className="section-subtitle">Siddhu</h2>
@@ -209,7 +221,11 @@ function App() {
       </section>
 
       {/* Social Media Designs */}
-      <section className="section portfolio-grid-section">
+      <section className="section portfolio-grid-section" id="works">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="section-header right-align">
           <h1 className="section-title">SOCIAL MEDIA</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -226,6 +242,10 @@ function App() {
 
       {/* Print Media Designs */}
       <section className="section portfolio-grid-section">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="section-header left-align">
           <h1 className="section-title">PRINT MEDIA</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -246,6 +266,10 @@ function App() {
 
       {/* Illustrations Designs */}
       <section className="section portfolio-grid-section">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="section-header left-align">
           <h1 className="section-title">ILLUSTRATIONS</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -271,6 +295,10 @@ function App() {
       
       {/* Branding Designs */}
       <section className="section portfolio-grid-section">
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
         <div className="section-header left-align">
           <h1 className="section-title">BRANDING</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -287,9 +315,13 @@ function App() {
 
       {/* Contact Section */}
       <section className="section contact-section" id="contact">
-        <div className="section-header left-align" style={{ marginBottom: '64px' }}>
-          <h1 className="section-title">CONNECT</h1>
-          <h2 className="section-subtitle">In Touch</h2>
+        <div className="section-slide-header">
+          <span className="slide-header-left">Siddhu</span>
+          <span className="slide-header-right">Portfolio</span>
+        </div>
+        <div className="section-header center" style={{ marginBottom: '64px' }}>
+          <h1 className="section-title">THANK YOU</h1>
+          <h2 className="section-subtitle">For Attention</h2>
         </div>
 
         <div className="contact-container">
