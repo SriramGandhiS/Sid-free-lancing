@@ -89,10 +89,6 @@ function App() {
     <div className="portfolio-container" ref={containerRef}>
       {/* Hero Section */}
       <section className="section hero">
-        <div className="hero-top-text">
-          <span>Graphic Designer Portfolio</span>
-          <span>Siddhu R.S</span>
-        </div>
         <div className="hero-title-container">
           <h1 className="hero-title">PORTFOLIO</h1>
           <h2 className="hero-subtitle">Graphic Design</h2>
