@@ -2,3 +2,9 @@ node_modules
 dist
 .env
 .DS_Store
+
+# Graphify & Agent Configs (AI Local Only)
+graphify-out/
+.agents/
+.graphifyignore
+

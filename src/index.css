@@ -70,31 +70,6 @@ body {
   justify-content: center;
 }
 
-.section-slide-header {
-  position: absolute;
-  top: 40px;
-  left: 64px;
-  right: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-body);
-  font-size: var(--size-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  pointer-events: none;
-  z-index: 10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 8px;
-}
-.slide-header-left {
-  color: var(--accent);
-  font-weight: 700;
-}
-.slide-header-right {
-  color: rgba(255, 255, 255, 0.4);
-}
-
 /* Common Header Styles */
 .section-header {
   position: relative;
@@ -297,7 +272,9 @@ body {
 }
 .soft-icon.ps { background-color: #001e36; color: #31a8ff; border: 2px solid #31a8ff; }
 .soft-icon.ai { background-color: #330000; color: #ff9a00; border: 2px solid #ff9a00; }
-.soft-icon.fg { background-color: #33001a; color: #f24e1e; border: 2px solid #f24e1e; }
+.soft-icon.fg { background-color: #1e1e1e; border: 2px solid #555555; }
+.soft-icon.ae { background-color: #140b2b; color: #d664ff; border: 2px solid #d664ff; }
+.soft-icon.pr { background-color: #14001e; color: #ea77ff; border: 2px solid #ea77ff; }
 .squiggle-5 { right: 25%; top: 50%; transform: rotate(15deg); }
 
 /* 4. Portfolio Grids */
@@ -483,7 +460,7 @@ body {
 @media (max-width: 768px) {
   .portfolio-container { overflow-x: hidden; width: 100vw; max-width: 100%; }
   .section { padding: var(--space-48) var(--space-16); min-height: auto; }
-  .hero { min-height: 45vh; padding-top: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  .hero { min-height: 80vh; padding-top: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
   .skills-grid { flex-direction: column; gap: var(--space-32); }
   .contact-links { flex-direction: column; align-items: center; gap: var(--space-16); }
   .hero-title { font-size: 3rem; }
@@ -970,13 +947,5 @@ body {
   .navbar-links a {
     font-size: 11px;
     letter-spacing: 0.08em;
-  }
-  .section-slide-header {
-    left: 16px;
-    right: 16px;
-    top: 60px;
-  }
-  .hero .section-slide-header {
-    display: none;
   }
 }

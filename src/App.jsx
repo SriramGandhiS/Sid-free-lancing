@@ -140,10 +140,6 @@ function App() {
 
       {/* Hero Section */}
       <section className="section hero">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
         <div className="hero-title-container">
           <h1 className="hero-title">PORTFOLIO</h1>
           <h2 className="hero-subtitle">Graphic Design</h2>
@@ -160,11 +156,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="section about" id="about">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
+      <section className="section about">
         <div className="about-content">
           <div className="about-text-area">
             <div className="section-header about-header">
@@ -187,11 +179,7 @@ function App() {
       </section>
 
       {/* Skills & Tools */}
-      <section className="section skills" id="skills">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
+      <section className="section skills">
         <div className="section-header center">
           <h1 className="section-title">SKILLS & TOOLS</h1>
           <h2 className="section-subtitle">Siddhu</h2>
@@ -200,10 +188,9 @@ function App() {
         <div className="skills-paper-container">
           <div className="skills-grid">
             <div className="skills-col">
-              <h3>Designing Skills</h3>
+              <h3>Skills</h3>
               <ul>
                 <li>Branding & Identity</li>
-                <li>Social Media Design</li>
                 <li>Typography & Color Theory</li>
                 <li>Video Editing</li>
               </ul>
@@ -211,9 +198,19 @@ function App() {
             <div className="skills-col">
               <h3>Softwares</h3>
               <div className="software-icons">
-                <span className="soft-icon ps">Ps</span>
-                <span className="soft-icon ai">Ai</span>
-                <span className="soft-icon fg">Fg</span>
+                <span className="soft-icon ps" title="Photoshop">Ps</span>
+                <span className="soft-icon ai" title="Illustrator">Ai</span>
+                <span className="soft-icon fg" title="Figma">
+                  <svg viewBox="0 0 120 180" style={{ width: '28px', height: '42px' }} xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 180c16.57 0 30-13.43 30-30V120H30c-16.57 0-30 13.43-30 30s13.43 30 30 30z" fill="#0ACF83"/>
+                    <path d="M30 120c16.57 0 30-13.43 30-30V60H30C13.43 60 0 73.43 0 90s13.43 30 30 30z" fill="#A259FF"/>
+                    <path d="M30 60c16.57 0 30-13.43 30-30S46.57 0 30 0 0 13.43 0 30s13.43 30 30 30z" fill="#F24E1E"/>
+                    <path d="M90 60c16.57 0 30-13.43 30-30S106.57 0 90 0 60 13.43 60 30s13.43 30 30 30z" fill="#FF7262"/>
+                    <path d="M60 120h30c16.57 0 30-13.43 30-30s-13.43-30-30-30H60v60z" fill="#1ABCFE"/>
+                  </svg>
+                </span>
+                <span className="soft-icon ae" title="After Effects">Ae</span>
+                <span className="soft-icon pr" title="Premiere Pro">Pr</span>
               </div>
             </div>
           </div>
@@ -221,11 +218,7 @@ function App() {
       </section>
 
       {/* Social Media Designs */}
-      <section className="section portfolio-grid-section" id="works">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
+      <section className="section portfolio-grid-section">
         <div className="section-header right-align">
           <h1 className="section-title">SOCIAL MEDIA</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -242,13 +235,9 @@ function App() {
 
       {/* Print Media Designs */}
       <section className="section portfolio-grid-section">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
         <div className="section-header left-align">
-          <h1 className="section-title">PRINT MEDIA</h1>
-          <h2 className="section-subtitle">Designs</h2>
+          <h1 className="section-title">BLOG DESIGN</h1>
+          <h2 className="section-subtitle">Layouts</h2>
         </div>
         <div className="grid-container print-grid">
           {printMediaImages.map((src, idx) => {
@@ -266,10 +255,6 @@ function App() {
 
       {/* Illustrations Designs */}
       <section className="section portfolio-grid-section">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
         <div className="section-header left-align">
           <h1 className="section-title">ILLUSTRATIONS</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -295,10 +280,6 @@ function App() {
       
       {/* Branding Designs */}
       <section className="section portfolio-grid-section">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
         <div className="section-header left-align">
           <h1 className="section-title">BRANDING</h1>
           <h2 className="section-subtitle">Designs</h2>
@@ -315,13 +296,9 @@ function App() {
 
       {/* Contact Section */}
       <section className="section contact-section" id="contact">
-        <div className="section-slide-header">
-          <span className="slide-header-left">Siddhu</span>
-          <span className="slide-header-right">Portfolio</span>
-        </div>
-        <div className="section-header center" style={{ marginBottom: '64px' }}>
-          <h1 className="section-title">THANK YOU</h1>
-          <h2 className="section-subtitle">For Attention</h2>
+        <div className="section-header left-align" style={{ marginBottom: '64px' }}>
+          <h1 className="section-title">CONNECT</h1>
+          <h2 className="section-subtitle">In Touch</h2>
         </div>
 
         <div className="contact-container">
