@@ -171,14 +171,12 @@ body {
 .about-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: var(--space-64);
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
 }
 .about-text-area {
-  flex: 1;
+  max-width: 600px;
   position: relative;
 }
 .about-header {
