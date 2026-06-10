@@ -84,7 +84,7 @@ function App() {
     })
   }, { scope: containerRef })
 
-  const socialMediaImages = [
+  const verticalPosters = [
     '/images/Social Media Design/Artboard 1.png',
     '/images/Social Media Design/Vizhi Veekura2.png',
     '/images/Social Media Design/ajith colr grade.png',
@@ -93,21 +93,18 @@ function App() {
     '/images/Social Media Design/firangpani.png',
     '/images/Social Media Design/lamine yamal.jpg',
     '/images/Social Media Design/messi india 3.jpg',
-    '/images/Social Media Design/paal dabba final.jpg'
-  ];
-
-  const printMediaImages = [
+    '/images/Social Media Design/paal dabba final.jpg',
     '/images/Social Media Design/sai albumpost.jpg',
     '/images/Social Media Design/sprite.jpg',
+    '/images/Social Media Design/paperboat final.png',
+    '/images/Social Media Design/tuf.jpg'
+  ];
+
+  const horizontalLayouts = [
     '/images/Blogs/Syngrid/syngrid-infographic-poster.jpg',
     '/images/Blogs/Syngrid/syngrid blog 4.3 copy.webp',
     '/images/Blogs/Syngrid/syngrid blog 6.3 copy.webp',
-    '/images/Blogs/Syngrid/syngrid blog copy (1).webp'
-  ];
-
-  const illustrationsImages = [
-    '/images/Social Media Design/paperboat final.png',
-    '/images/Social Media Design/tuf.jpg',
+    '/images/Blogs/Syngrid/syngrid blog copy (1).webp',
     '/images/Blogs/Mak Logistics/mak blog 11.5 copy.webp',
     '/images/Blogs/Mak Logistics/mak blog 18.2 blog 2 copy.webp',
     '/images/Blogs/Mak Logistics/mak-blog-18 (2).jpg',
@@ -217,62 +214,32 @@ function App() {
         </div>
       </section>
 
-      {/* Social Media Designs */}
+      {/* Social Media & Poster Designs */}
       <section className="section portfolio-grid-section">
         <div className="section-header right-align">
-          <h1 className="section-title">SOCIAL MEDIA</h1>
-          <h2 className="section-subtitle">Designs</h2>
+          <h1 className="section-title">POSTERS & SOCIAL MEDIA</h1>
+          <h2 className="section-subtitle">Vertical</h2>
         </div>
         <MasonryGrid 
-          images={socialMediaImages} 
+          images={verticalPosters} 
           renderItem={(src, idx) => (
             <div key={idx} className="grid-item">
-              <img src={src} className="portfolio-image" alt="Social Media Design" onClick={() => setSelectedImage(src)} />
+              <img src={src} className="portfolio-image" alt="Poster & Social Media Design" onClick={() => setSelectedImage(src)} />
             </div>
           )}
         />
       </section>
 
-      {/* Print Media Designs */}
+      {/* Blog & Web Layouts */}
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
-          <h1 className="section-title">BLOG DESIGN</h1>
-          <h2 className="section-subtitle">Layouts</h2>
+          <h1 className="section-title">BLOG & WEB LAYOUTS</h1>
+          <h2 className="section-subtitle">Horizontal</h2>
         </div>
-        <div className="grid-container print-grid">
-          {printMediaImages.map((src, idx) => {
-            const isFirstVertical = idx === 0;
-            const isFirstLandscape = idx === 2;
-            const extraClass = isFirstVertical ? 'first-vertical' : (isFirstLandscape ? 'first-landscape' : '');
-            return (
-              <div key={idx} className={`grid-item ${extraClass}`}>
-                <img src={src} className="portfolio-image" alt="Print Media Design" onClick={() => setSelectedImage(src)} />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Illustrations Designs */}
-      <section className="section portfolio-grid-section">
-        <div className="section-header left-align">
-          <h1 className="section-title">ILLUSTRATIONS</h1>
-          <h2 className="section-subtitle">Designs</h2>
-        </div>
-        
-        <div className="grid-container illustrations-grid">
-          <div className="grid-item first-vertical">
-            <img src="/images/Social Media Design/paperboat final.png" className="portfolio-image" alt="Illustration" onClick={() => setSelectedImage("/images/Social Media Design/paperboat final.png")} />
-          </div>
-          <div className="grid-item">
-            <img src="/images/Social Media Design/tuf.jpg" className="portfolio-image" alt="Illustration" onClick={() => setSelectedImage("/images/Social Media Design/tuf.jpg")} />
-          </div>
-          {['/images/Blogs/Mak Logistics/mak blog 11.5 copy.webp',
-            '/images/Blogs/Mak Logistics/mak blog 18.2 blog 2 copy.webp',
-            '/images/Blogs/Mak Logistics/mak-blog-18 (2).jpg',
-            '/images/Blogs/Mak Logistics/mak blog 2.3 2 copy.webp'].map((src, idx) => (
-            <div key={idx} className={`grid-item ${idx === 0 ? 'first-landscape' : ''}`}>
-              <img src={src} className="portfolio-image" alt="Illustration" onClick={() => setSelectedImage(src)} />
+        <div className="grid-container">
+          {horizontalLayouts.map((src, idx) => (
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Blog & Web Layout" onClick={() => setSelectedImage(src)} />
             </div>
           ))}
         </div>
@@ -281,8 +248,8 @@ function App() {
       {/* Branding Designs */}
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
-          <h1 className="section-title">BRANDING</h1>
-          <h2 className="section-subtitle">Designs</h2>
+          <h1 className="section-title">BRANDING & IDENTITY</h1>
+          <h2 className="section-subtitle">Branding</h2>
         </div>
         <MasonryGrid 
           images={brandingImages} 
