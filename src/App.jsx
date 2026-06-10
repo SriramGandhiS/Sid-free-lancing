@@ -160,8 +160,7 @@ function App() {
         <div className="about-content">
           <div className="about-text-area">
             <div className="section-header about-header">
-              <h1 className="section-title">HELLO I'AM</h1>
-              <h2 className="section-subtitle">Siddhu</h2>
+              <h1 className="section-title">HI, I'M <span className="highlight-name">SIDDHU</span></h1>
             </div>
             <p className="about-desc">
               Creative and detail-oriented Graphic Designer with hands-on freelance experience and a strong academic foundation in Electrical and Electronics Engineering. Proficient in Adobe tools, branding, and Design principles.
@@ -266,7 +265,7 @@ function App() {
       {/* Branding Designs */}
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
-          <h1 className="section-title">BRANDING & IDENTITY</h1>
+          <h1 className="section-title">BRAND DESIGN</h1>
         </div>
         <MasonryGrid 
           images={brandingImages} 
