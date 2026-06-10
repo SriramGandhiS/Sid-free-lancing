@@ -84,7 +84,7 @@ function App() {
     })
   }, { scope: containerRef })
 
-  const verticalPosters = [
+  const posterDesigns = [
     '/images/Social Media Design/Artboard 1.png',
     '/images/Social Media Design/Vizhi Veekura2.png',
     '/images/Social Media Design/ajith colr grade.png',
@@ -93,7 +93,10 @@ function App() {
     '/images/Social Media Design/firangpani.png',
     '/images/Social Media Design/lamine yamal.jpg',
     '/images/Social Media Design/messi india 3.jpg',
-    '/images/Social Media Design/paal dabba final.jpg',
+    '/images/Social Media Design/paal dabba final.jpg'
+  ];
+
+  const socialMediaDesigns = [
     '/images/Social Media Design/sai albumpost.jpg',
     '/images/Social Media Design/sprite.jpg',
     '/images/Social Media Design/paperboat final.png',
@@ -214,17 +217,33 @@ function App() {
         </div>
       </section>
 
-      {/* Social Media & Poster Designs */}
+      {/* Poster Designs */}
       <section className="section portfolio-grid-section">
         <div className="section-header right-align">
-          <h1 className="section-title">POSTERS & SOCIAL MEDIA</h1>
+          <h1 className="section-title">POSTER DESIGNS</h1>
           <h2 className="section-subtitle">Vertical</h2>
         </div>
         <MasonryGrid 
-          images={verticalPosters} 
+          images={posterDesigns} 
           renderItem={(src, idx) => (
             <div key={idx} className="grid-item">
-              <img src={src} className="portfolio-image" alt="Poster & Social Media Design" onClick={() => setSelectedImage(src)} />
+              <img src={src} className="portfolio-image" alt="Poster Design" onClick={() => setSelectedImage(src)} />
+            </div>
+          )}
+        />
+      </section>
+
+      {/* Social Media Design */}
+      <section className="section portfolio-grid-section">
+        <div className="section-header center">
+          <h1 className="section-title">SOCIAL MEDIA DESIGN</h1>
+          <h2 className="section-subtitle">Designs</h2>
+        </div>
+        <MasonryGrid 
+          images={socialMediaDesigns} 
+          renderItem={(src, idx) => (
+            <div key={idx} className="grid-item">
+              <img src={src} className="portfolio-image" alt="Social Media Design" onClick={() => setSelectedImage(src)} />
             </div>
           )}
         />
