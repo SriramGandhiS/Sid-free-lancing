@@ -209,7 +209,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 28%; /* Shakes off the top blank space perfectly */
+  object-position: center 10%; /* Shakes off more of the top blank space */
   background-color: transparent;
   display: block;
 }
