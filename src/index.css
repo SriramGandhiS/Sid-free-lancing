@@ -208,12 +208,10 @@ body {
 }
 .profile-img {
   width: 400px;
-  height: 520px;
+  height: 700px;
   object-fit: cover;
-  object-position: center 15%;
-  transform: scale(1.4); /* Zoom in by 40% to remove white space */
-  transform-origin: center 25%; /* Anchor zoom around the head/face area */
-  background-color: #111;
+  margin-top: -150px; /* Push the empty space at the top of the PNG out of the container */
+  background-color: transparent;
   border-radius: 12px;
   position: relative;
   display: block;
