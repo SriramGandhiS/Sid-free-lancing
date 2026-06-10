@@ -88,6 +88,7 @@ body {
 .section-subtitle {
   font-family: var(--font-cursive);
   font-size: var(--size-4xl);
+  font-weight: 700;
   color: var(--accent);
   position: absolute;
   top: 50%;

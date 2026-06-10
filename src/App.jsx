@@ -252,7 +252,7 @@ function App() {
       {/* Blog & Web Layouts */}
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
-          <h1 className="section-title">BLOG & WEB LAYOUTS</h1>
+          <h1 className="section-title">BLOG DESIGN</h1>
         </div>
         <div className="grid-container">
           {horizontalLayouts.map((src, idx) => (
