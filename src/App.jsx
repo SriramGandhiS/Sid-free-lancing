@@ -342,6 +342,7 @@ function App() {
                 <textarea name="message" placeholder="What do you want to design?" rows="4" required></textarea>
               </div>
               <button type="submit" className="contact-submit-btn">SEND BRIEF</button>
+            </form>
           </div>
         </div>
 
