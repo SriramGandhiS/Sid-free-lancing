@@ -76,33 +76,21 @@ body {
   margin-bottom: var(--space-64);
 }
 .section-title {
-  font-family: var(--font-display);
-  font-size: var(--size-5xl);
-  letter-spacing: 0.05em;
-  line-height: 1;
-  text-transform: uppercase;
-  color: var(--paper);
+  font-family: 'Pacifico', cursive;
+  font-size: var(--size-4xl);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  color: var(--accent);
   z-index: 2;
   position: relative;
+  text-transform: none;
 }
-.section-subtitle {
-  font-family: var(--font-cursive);
-  font-size: var(--size-4xl);
-  color: var(--accent);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-5deg);
-  z-index: 3;
-  white-space: nowrap;
-  pointer-events: none;
-}
+/* subtitle hidden — single clean title only */
+.section-subtitle { display: none; }
 
 .center { text-align: center; }
 .left-align { text-align: left; }
 .right-align { text-align: right; }
-.left-align .section-subtitle { left: 20%; }
-.right-align .section-subtitle { left: 80%; }
 
 /* Squiggles and Icons */
 .squiggle {
@@ -184,11 +172,7 @@ body {
   margin-bottom: var(--space-32);
 }
 .about-header .section-title {
-  font-size: var(--size-5xl);
-}
-.about-header .section-subtitle {
-  left: 30%;
-  transform: translate(-50%, 20%) rotate(-5deg);
+  font-size: var(--size-4xl);
 }
 .about-desc {
   font-size: var(--size-sm);
@@ -448,8 +432,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .section-title { font-size: var(--size-4xl); }
-  .section-subtitle { font-size: var(--size-3xl); }
+  .section-title { font-size: var(--size-3xl); }
   .hero-title { font-size: var(--size-5xl); }
   .hero-subtitle { font-size: var(--size-4xl); }
   .about-content { flex-direction: column; }
@@ -465,8 +448,7 @@ body {
   .contact-links { flex-direction: column; align-items: center; gap: var(--space-16); }
   .hero-title { font-size: 3rem; }
   .hero-subtitle { font-size: 2rem; }
-  .section-title { font-size: 2.5rem; }
-  .section-subtitle { font-size: 1.8rem; }
+  .section-title { font-size: 2rem; }
   /* About section — full width, bigger text on mobile */
   .about-content {
     flex-direction: column;
@@ -478,11 +460,7 @@ body {
     text-align: center;
   }
   .about-header .section-title {
-    font-size: 4rem;
-  }
-  .about-header .section-subtitle {
-    font-size: 3.5rem;
-    left: 55%;
+    font-size: 2.5rem;
   }
   .about-desc {
     max-width: 100%;
