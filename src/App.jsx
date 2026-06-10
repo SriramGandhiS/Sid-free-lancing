@@ -376,12 +376,24 @@ function App() {
           <a href="tel:+919361338723" className="contact-info-item">
             <div className="contact-info-icon">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 a2 2 0 0 1 2.2 1.72z"/>
               </svg>
             </div>
             <div className="contact-info-text">
               <span className="contact-info-label">PHONE</span>
               <span className="contact-info-value">+91 9361338723</span>
+            </div>
+          </a>
+          <div className="contact-info-divider"></div>
+          <a href="https://www.linkedin.com/in/siddhurs16/" target="_blank" rel="noreferrer" className="contact-info-item">
+            <div className="contact-info-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <div className="contact-info-text">
+              <span className="contact-info-label">LINKEDIN</span>
+              <span className="contact-info-value">linkedin.com/in/siddhurs16</span>
             </div>
           </a>
         </div>
@@ -392,8 +404,9 @@ function App() {
         <div className="footer-bottom-tear">
           <div className="contact-links">
             <span>📞 +91 9361338723</span>
-            <span>🌐 behance.net/rssiddhu</span>
+            <span>🌐 <a href="https://behance.net/rssiddhu" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>behance.net/rssiddhu</a></span>
             <span>✉️ rssiddhuram@gmail.com</span>
+            <span>🔗 <a href="https://www.linkedin.com/in/siddhurs16/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>linkedin.com/in/siddhurs16</a></span>
           </div>
         </div>
       </footer>
