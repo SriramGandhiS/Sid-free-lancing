@@ -191,10 +191,10 @@ body {
   transform: translate(-50%, 20%) rotate(-5deg);
 }
 .about-desc {
-  font-size: var(--size-sm);
+  font-size: var(--size-base);
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 400px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 540px;
 }
 .about-image-area {
   width: 400px;
