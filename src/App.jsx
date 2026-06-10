@@ -181,8 +181,7 @@ function App() {
       {/* Skills & Tools */}
       <section className="section skills">
         <div className="section-header center">
-          <h1 className="section-title">SKILLS & TOOLS</h1>
-          <h2 className="section-subtitle">Siddhu</h2>
+          <h1 className="section-title">SKILLS</h1>
           <div className="squiggle squiggle-5"></div>
         </div>
         <div className="skills-paper-container">
@@ -190,9 +189,12 @@ function App() {
             <div className="skills-col">
               <h3>Skills</h3>
               <ul>
-                <li>Branding & Identity</li>
-                <li>Typography & Color Theory</li>
+                <li>Graphic Design</li>
+                <li>Typography</li>
+                <li>Color Theory</li>
                 <li>Video Editing</li>
+                <li>Motion Design</li>
+                <li>UI / UX</li>
               </ul>
             </div>
             <div className="skills-col">
@@ -221,7 +223,6 @@ function App() {
       <section className="section portfolio-grid-section">
         <div className="section-header right-align">
           <h1 className="section-title">POSTER DESIGNS</h1>
-          <h2 className="section-subtitle">Vertical</h2>
         </div>
         <MasonryGrid 
           images={posterDesigns} 
@@ -237,7 +238,6 @@ function App() {
       <section className="section portfolio-grid-section">
         <div className="section-header center">
           <h1 className="section-title">SOCIAL MEDIA DESIGN</h1>
-          <h2 className="section-subtitle">Designs</h2>
         </div>
         <MasonryGrid 
           images={socialMediaDesigns} 
@@ -253,7 +253,6 @@ function App() {
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
           <h1 className="section-title">BLOG & WEB LAYOUTS</h1>
-          <h2 className="section-subtitle">Horizontal</h2>
         </div>
         <div className="grid-container">
           {horizontalLayouts.map((src, idx) => (
@@ -268,7 +267,6 @@ function App() {
       <section className="section portfolio-grid-section">
         <div className="section-header left-align">
           <h1 className="section-title">BRANDING & IDENTITY</h1>
-          <h2 className="section-subtitle">Branding</h2>
         </div>
         <MasonryGrid 
           images={brandingImages} 
@@ -344,20 +342,6 @@ function App() {
                 <textarea name="message" placeholder="What do you want to design?" rows="4" required></textarea>
               </div>
               <button type="submit" className="contact-submit-btn">SEND BRIEF</button>
-            </form>
-          </div>
-
-          {/* Right Side: Pantone Card (Graphic Design icon) */}
-          <div className="contact-badge-card">
-            <div className="pantone-card">
-              <div className="pantone-color-block"></div>
-              <div className="pantone-meta">
-                <div className="pantone-title">PANTONE®</div>
-                <div className="pantone-code">2026-SIDDHU</div>
-                <div className="pantone-designer">SIDDHU R.S</div>
-                <div className="pantone-role">GRAPHIC DESIGNER</div>
-              </div>
-            </div>
           </div>
         </div>
 
